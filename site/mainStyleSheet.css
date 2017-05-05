@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 #header {
     clear: left;
     height: 80px;
@@ -56,14 +60,111 @@
 
 #content {
     height: auto;
-    width: auto;
+    width: 1200px;
     margin-top: 40px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
     background-color: white;
 }
 
 .imgLeft {
     float: left;
+    margin-right: 20px;
+    border: #000000 thin solid;
+}
+
+#navSelector {
+    text-align: center;
+}
+
+.button {
+    background-color: #2ea6ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.blankBox {
+    height: 150px;
+}
+
+#footer {
+    float: left;
+    width:100%;
+    background: #2F3584;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: -12px;
+    color: white;
+}
+
+#footer ul {
+    list-style-type: none;
+    float: left;
+}
+
+#gallery {
+    margin-left: 110px;
+}
+
+
+.artistGroup {
+    height: auto;
+    border: #000000 2px solid;
+}
+
+.artistBlock {
+    float: left;
+    margin: 20px;
+    background-color: #bfcdcd;
+}
+
+.artistUnderBlock {
+    background-color: #bfcdcd;
+    height: 50px;
+}
+
+.menuBox {
+  width: 277px;
+  height: 350px;
+  display: inline-grid;
+  text-align: center;
+  background-color: #2ea6ff;
+  margin: 50px;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+#centerTitle {
+  text-align: center;
+}
+
+#membershipButton {
+  background-color: #1924B1;
+  border: none;
+  color: white;
+  padding: 46px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bodyText {
+  font-size: .7em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.menuBoxTitle {
+    border-bottom: solid 2px #1924B1;
 }
