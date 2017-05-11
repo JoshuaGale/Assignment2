@@ -2,10 +2,15 @@ body {
   font-family: sans-serif;
 }
 
+#page {
+    width: 100vw;
+    height: 100vh;
+}
+
 #header {
     clear: left;
     height: 80px;
-    width: 100%;
+
     padding: 25px;
     padding-top: 10px;
     margin: -12px -12px 0 -12px;
@@ -53,8 +58,11 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 600px){
-    #navBar li {display: block;}
+@media screen and ( max-width : 1200px ){
+    #page {width: 1200px;
+    }
+
+
 }
 
 
@@ -121,7 +129,7 @@ body {
 }
 
 .artistBlock {
-    float: left;
+    display: inline-table;
     margin: 20px;
     background-color: #bfcdcd;
 }
@@ -134,7 +142,7 @@ body {
 .menuBox {
   width: 277px;
   height: 350px;
-  display: inline-grid;
+  display: inline-table;
   text-align: center;
   background-color: #2ea6ff;
   margin: 50px;
@@ -167,4 +175,44 @@ body {
 
 .menuBoxTitle {
     border-bottom: solid 2px #1924B1;
+}
+
+
+
+
+#historyNavBar {
+}
+
+#historyNavBar li {
+    display: inline;
+}
+
+#historyNavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 17px;
+    overflow: hidden;
+    background-color: #2ea6ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#historyNavBar ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 24px 25px;
+    text-decoration: none;
+}
+
+
+
+#historyNavBar ul li a.active {
+    background-color: #ffffff;
+    color: black;
+}
+
+#historyNavBar ul li a:hover:not(.active) {
+    background-color: #4C57D8;
+    color: white;
 }
