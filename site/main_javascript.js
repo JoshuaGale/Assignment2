@@ -81,6 +81,8 @@ function checkInput(){
 
 	if (firstName == "" || lastName == "" || email == "" || comment == ""){
 			alert("Please ensure that you have entered your first name, last name, email, and comment");
+	} else {
+		alert("Thankyou for sending us your message.")
 	}
 	if (firstName == "") {
 		document.getElementById("messageFirstName").style.backgroundColor = "rgba(238, 215, 58, 0.3)";
