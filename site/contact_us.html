@@ -29,19 +29,20 @@
    <form>
      <p>First Name:
        <br>
-     <input type="text" name="first_name"></p>
+     <input id="messageFirstName" type="text" name="first_name"></p>
      <p>Last Name:
        <br>
-     <input type="text" name="last_name"></p>
+     <input id="messageLastName" type="text" name="last_name"></p>
      <p>Email Address:
        <br>
-     <input type="text" name="email"></p>
+     <input id="messageEmail" type="text" name="email"></p>
      <p>Phone Number:
        <br>
-     <input type="text" name="phone_number"></p>
+     <input id="messagePhoneNumber" type="text" name="phone_number"></p>
      <p>comments:
        <br>
-     <textarea name="comments" cols=30 rows=5></textarea></p>
+     <textarea id="messageComments" name="comments" cols=30 rows=5></textarea></p>
+     <input class="button" type="button" value="Send" onclick="checkInput();">
    </form>
  </div>
  <div class="contactBox" id="facebookBox">

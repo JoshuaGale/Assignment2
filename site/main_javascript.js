@@ -70,5 +70,36 @@ function changeYearText(year) {
 
     }
 
+}
 
+
+function checkInput(){
+	firstName = document.getElementById("messageFirstName").value;
+	lastName = document.getElementById("messageLastName").value;
+	email = document.getElementById("messageEmail").value;
+	comment = document.getElementById("messageComments").value;
+
+	if (firstName == "" || lastName == "" || email == "" || comment == ""){
+			alert("Please ensure that you have entered your first name, last name, email, and comment");
+	}
+	if (firstName == "") {
+		document.getElementById("messageFirstName").style.backgroundColor = "rgba(238, 215, 58, 0.3)";
+	} else {
+		document.getElementById("messageFirstName").style.backgroundColor = "white";
+	}
+	if (lastName == "") {
+		document.getElementById("messageLastName").style.backgroundColor = "rgba(238, 215, 58, 0.3)";
+	} else {
+		document.getElementById("messageLastName").style.backgroundColor = "white";
+	}
+	if (email == "") {
+		document.getElementById("messageEmail").style.backgroundColor = "rgba(238, 215, 58, 0.3)";
+	} else {
+		document.getElementById("messageEmail").style.backgroundColor = "white";
+	}
+	if (comment == "") {
+		document.getElementById("messageComments").style.backgroundColor = "rgba(238, 215, 58, 0.3)";
+	} else {
+		document.getElementById("messageComments").style.backgroundColor = "white";
+	}
 }
