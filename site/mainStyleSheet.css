@@ -177,9 +177,6 @@ body {
     border-bottom: solid 2px #1924B1;
 }
 
-
-
-
 #historyNavBar {
 }
 
@@ -205,8 +202,6 @@ body {
     text-decoration: none;
 }
 
-
-
 #historyNavBar ul li a.active {
     background-color: #ffffff;
     color: black;
@@ -215,4 +210,17 @@ body {
 #historyNavBar ul li a:hover:not(.active) {
     background-color: #4C57D8;
     color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+.contactBox {
+  float: left;
+  padding: 20px 40px 20px 160px;
+}
+
+#facebookBox {
+  text-align: center;
 }
