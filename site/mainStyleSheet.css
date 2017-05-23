@@ -224,3 +224,62 @@ textarea {
 #facebookBox {
   text-align: center;
 }
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.navBadge {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  height: 16px;
+  padding: 0;
+  color:#fff;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center
+
+}
+
+.left, .right, .navBadge {
+  cursor:pointer;
+}
+
+.navBadgeFilled {
+  color:#000;
+  background-color:#fff;
+}
+
+.navBadge:hover{
+  color:#000;
+  background-color:#fff;
+}
+
+.contentContainer {
+  position:relative;
+  padding: 0px 0px 0px 85px;
+}
+
+.centerGalery {
+  text-align: center;
+  width: 80%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 28px;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-45%,0%);*/
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float: right;
+}

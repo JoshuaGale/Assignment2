@@ -27,7 +27,18 @@
         <h1>Barrier Reef Orchestra</h1>
       </div>
         <div id="gallery">
-            <img src="gallery/instruments/Background_BRO_056.jpg">
+          <div class="contentContainer" style="max-width:800px">
+            <img class="mySlides" src="gallery/instruments/Background_BRO_DSC0592.jpg">
+            <img class="mySlides" src="gallery/instruments/Background_BRO_107.jpg">
+            <img class="mySlides" src="gallery/instruments/Background_BRO_DSC0803.jpg">
+            <div class="centerGalery">
+              <div class="left" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="right" onclick="plusDivs(1)">&#10095;</div>
+              <span class="navBadge demo" onclick="currentDiv(1)"></span>
+              <span class="navBadge demo" onclick="currentDiv(2)"></span>
+              <span class="navBadge demo" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
         </div>
         <div class="menuBox">
           <p class="menuBoxTitle">The Barrier Reef Orchestra - A North Queensland Icon</p>
@@ -65,5 +76,6 @@
         </div>
     </div>
 </div>
+<script src="main_javascript.js"></script>
 </body>
 </html>
