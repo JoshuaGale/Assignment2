@@ -122,23 +122,6 @@ body {
     margin-left: 110px;
 }
 
-
-.artistGroup {
-    height: auto;
-    border: #000000 2px solid;
-}
-
-.artistBlock {
-    display: inline-table;
-    margin: 20px;
-    background-color: #bfcdcd;
-}
-
-.artistUnderBlock {
-    background-color: #bfcdcd;
-    height: 50px;
-}
-
 .menuBox {
   width: 277px;
   height: 350px;
@@ -223,4 +206,58 @@ textarea {
 
 #facebookBox {
   text-align: center;
+}
+.sponsorBlock {
+    display: inline-block;
+    margin: 20px;
+}
+#benefactors {
+  float: left;
+  padding-left: 150px;
+}
+.benefactorHeading {
+  font-size: 35px;
+}
+.benefactorList {
+  list-style-type: none;
+  font-size: 20px;
+  background-color: #2ea6ff;
+  max-width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sponsorBlock {
+  margin: 0;
+  padding-left: 150px;
+}
+#sponsorDonate {
+  float: right;
+  padding-right: 150px;
+}
+.sponsorDonateHeading {
+  font-size: 35px;
+}
+.sponsorDonateContent {
+  max-width: 300px;
+  font-size: 20px;
+}
+.artistHeading {
+  padding-left: 20px;
+}
+.artistGroup {
+    height: auto;
+    border: #000000 2px solid;
+}
+
+.artistBlock {
+    display: inline-table;
+    margin: 20px;
+    background-color: #bfcdcd;
+}
+
+.artistUnderBlock {
+    background-color: #bfcdcd;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
 }
