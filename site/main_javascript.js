@@ -141,3 +141,23 @@ function showDivs(n) {
 	x[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " navBadgeFilled";
 }
+
+function signUpFormFunction(form) {
+
+	document.getElementById("helpSignUp").className = document.getElementById("helpSignUp").className = "hiddenForm";
+	document.getElementById("playerSignUp").className = document.getElementById("playerSignUp").className  = "hiddenForm";
+	document.getElementById("membershipSignUp").className = document.getElementById("membershipSignUp").className  = "hiddenForm";
+	switch (form) {
+		case "1":
+			document.getElementById("membershipSignUp").className = document.getElementById("membershipSignUp").className.replace("hiddenForm", "");
+		break;
+
+		case "2":
+			document.getElementById("helpSignUp").className = document.getElementById("helpSignUp").className.replace("hiddenForm", "");
+		break;
+
+		case "3":
+			document.getElementById("playerSignUp").className = document.getElementById("playerSignUp").className.replace("hiddenForm", "");
+		break;
+	}
+}

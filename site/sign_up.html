@@ -31,28 +31,45 @@
   <div class="contactBox">
     <h1>Become a member today</h1>
     <form>
-      <p>renewal of membership: <input type="radio" name="membership">    New membership: <input type="radio" name="membership"></p>
-      <p>membership type: <input type="radio" name="membershipType"> Adult <input type="radio" name="membershipType"> Family <input type="radio" name="membershipType"> Student <input type="radio" name="membershipType"> Concession</p>
-      <p>Student/Consession Number: <input type="text"></p>
-      <br>
-      <h1>Applicant Details:</h1>
-      <p>Title/s <input type="text"></p>
-      <p>Family Name: <input id="membershipFamilyName" type="text" name="familyName"></p></p>
-      <p>Given Names: <input id="membershipGivenName" type="text" name="givenNames"></p></p>
-      <p>Childern of Family Membership:</p>
-      <p>Child 1: <input type="text"> DOB: <input type="text"></p>
-      <p>Child 2: <input type="text"> DOB: <input type="text"></p>
-      <p>Child 3: <input type="text"> DOB: <input type="text"></p>
-      <br>
-      <p>Address: <input type="text"> Post Code: <input type="text"></p>
-      <p>Phone No: <input type="text"> Mobile: <input type="text"></p>
-      <p>e-mail: <input text="text"></p>
-      <p>Membership fees: Adult: $30.  Family: $60. Full time student: $15. Under 18: $15 Concession: $15.<br>
-        Concession available to persons in receipt of Centrelink pension card. Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</p>
-      <p>Payment Options: <br><input type="radio" name="paymentType"> Cash $<input type="text"> <br>
-        <input type="radio" name="paymentType"> Cheque $<input text="text"><br>
-        <input type="radio" name="paymentType"> Direct Debit to: NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</p>
+      <p><input type="radio" name="applicationType" onClick="signUpFormFunction('1')"> I wish to purchase a membership</p>
+      <p><input type="radio" name="applicationType" onClick="signUpFormFunction('2')"> I wish to help the Barrier Reef Orchestra in another way</p>
+      <p><input type="radio" name="applicationType" onClick="signUpFormFunction('3')"> I wish to perform with the Barrier Reef Orchestra</p>
+      <div class="hiddenForm" id="membershipSignUp">
+
+        <h1>Applicant Details:</h1>
+        <p>renewal of membership: <input type="radio" name="membership">    New membership: <input type="radio" name="membership"></p>
+        <p>membership type: <input type="radio" name="membershipType"> Adult <input type="radio" name="membershipType"> Family <input type="radio" name="membershipType"> Student <input type="radio" name="membershipType"> Concession</p>
+        <p>Student/Consession Number: <input type="text"></p>
         <br>
+        <p>Title/s <input type="text"></p>
+        <p>Family Name: <input id="membershipFamilyName" type="text" name="familyName"></p></p>
+        <p>Given Names: <input id="membershipGivenName" type="text" name="givenNames"></p></p>
+        <p>Childern of Family Membership:</p>
+        <p>Child 1: <input type="text"> DOB: <input type="text"></p>
+        <p>Child 2: <input type="text"> DOB: <input type="text"></p>
+        <p>Child 3: <input type="text"> DOB: <input type="text"></p>
+        <br>
+        <p>Address: <input type="text"> Post Code: <input type="text"></p>
+        <p>Phone No: <input type="text"> Mobile: <input type="text"></p>
+        <p>e-mail: <input text="text"></p>
+
+        <p>Membership fees: Adult: $30.  Family: $60. Full time student: $15. Under 18: $15 Concession: $15.<br>
+          Concession available to persons in receipt of Centrelink pension card. Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</p>
+        <p>Payment Options: <br><input type="radio" name="paymentType"> Cash $<input type="text"> <br>
+          <input type="radio" name="paymentType"> Cheque $<input text="text"><br>
+          <input type="radio" name="paymentType"> Direct Debit to: NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</p>
+          <br>
+          <input class="button" type="button" value="Send">
+      </div>
+
+      <div class="hiddenForm" id="helpSignUp">
+        <h1>Applicant Details:</h1>
+        <p>Title/s <input type="text"></p>
+        <p>Family Name: <input id="membershipFamilyName" type="text" name="familyName"></p></p>
+        <p>Given Names: <input id="membershipGivenName" type="text" name="givenNames"></p></p>
+        <p>Address: <input type="text"> Post Code: <input type="text"></p>
+        <p>Phone No: <input type="text"> Mobile: <input type="text"></p>
+        <p>e-mail: <input text="text"></p>
         <h1>How can you help the Orchestra?</h1>
         <p>I am interested in:</p>
         <p>
@@ -64,17 +81,29 @@
             <input type="checkbox" name="interestedRole"> Sponsorship<br>
             <input type="checkbox" name="interestedRole"> Desktop publishing
         </p>
-        <p>Player Registration</p>
+        <input class="button" type="button" value="Send">
+      </div>
+
+      <div class="hiddenForm" id="playerSignUp">
+        <h1>Applicant Details:</h1>
+          <p>Title/s <input type="text"></p>
+          <p>Family Name: <input id="membershipFamilyName" type="text" name="familyName"></p></p>
+          <p>Given Names: <input id="membershipGivenName" type="text" name="givenNames"></p></p>
+          <p>Address: <input type="text"> Post Code: <input type="text"></p>
+          <p>Phone No: <input type="text"> Mobile: <input type="text"></p>
+          <p>e-mail: <input text="text"></p>
+        <h1>Player Registration</h1>
           <p>Instrument/s played: <input type="text"></p>
           <p>Qualifications: <input type="text" cols=50></p>
           <p>Experience: <br><textarea cols=50 rows=5></textarea></p>
           <br>
-  <input class="button" type="button" value="Send" onclick="checkInput();">
+          <input class="button" type="button" value="Send">
+      </div>
     </form>
   </div>
 </div>
 
-<div class="blankBox"></div>
+
 
 <div id="footer">
     <h1>Contact Us</h1>
