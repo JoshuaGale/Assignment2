@@ -74,6 +74,7 @@ body {
     margin-right: auto;
     margin-bottom: 100px;
     background-color: white;
+    line-height: 1.5;
 }
 
 .imgLeft {
@@ -158,12 +159,12 @@ body {
   background-color: #1924B1;
   border: none;
   color: white;
-  padding: 46px 42px;
+  padding: 54px 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 32px;
+  margin: -25px 2px;
   cursor: pointer;
 }
 
@@ -287,4 +288,9 @@ textarea {
 
 .hiddenForm {
   display: none;
+}
+
+.bulletinSubText {
+  font-size: .8em;
+  color: grey;
 }
