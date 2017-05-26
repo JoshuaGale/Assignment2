@@ -1,0 +1,280 @@
+body {
+  font-family: sans-serif;
+}
+
+#page {
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    clear: left;
+    height: 80px;
+
+    padding: 25px;
+    padding-top: 10px;
+    margin: -12px -12px 0 -12px;
+    background-color: #1924B1;
+    color: white;
+    font-size: 1.2em;
+}
+
+#navBar {
+    text-align: center;
+    margin: 0 -12px 0 -12px;
+}
+
+#navBar li {
+    display: inline;
+}
+
+#navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2ea6ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navBar ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+}
+
+
+
+#navBar ul li a.active {
+    background-color: #ffffff;
+    color: black;
+}
+
+#navBar ul li a:hover:not(.active) {
+    background-color: #4C57D8;
+    color: white;
+}
+
+@media screen and ( max-width : 1200px ){
+    #page {width: 1200px;
+    }
+
+
+}
+
+
+#content {
+    height: auto;
+    width: 1200px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.imgLeft {
+    float: left;
+    margin-right: 20px;
+    border: #000000 thin solid;
+}
+
+#navSelector {
+    text-align: center;
+}
+
+.button {
+    background-color: #2ea6ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.blankBox {
+    height: 150px;
+}
+
+#footer {
+    float: left;
+    width:100%;
+    background: #2F3584;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: -12px;
+    color: white;
+}
+
+#footer ul {
+    list-style-type: none;
+    float: left;
+}
+
+#gallery {
+    margin-left: 110px;
+}
+
+
+.artistGroup {
+    height: auto;
+    border: #000000 2px solid;
+}
+
+.artistBlock {
+    display: inline-table;
+    margin: 20px;
+    background-color: #bfcdcd;
+}
+
+.artistUnderBlock {
+    background-color: #bfcdcd;
+    height: 50px;
+}
+
+.menuBox {
+  width: 277px;
+  height: 350px;
+  display: inline-table;
+  text-align: center;
+  background-color: #2ea6ff;
+  margin: 50px;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+#centerTitle {
+  text-align: center;
+}
+
+#membershipButton {
+  background-color: #1924B1;
+  border: none;
+  color: white;
+  padding: 46px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bodyText {
+  font-size: .7em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.menuBoxTitle {
+    border-bottom: solid 2px #1924B1;
+}
+
+#historyNavBar {
+}
+
+#historyNavBar li {
+    display: inline;
+}
+
+#historyNavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 17px;
+    overflow: hidden;
+    background-color: #2ea6ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#historyNavBar ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 24px 25px;
+    text-decoration: none;
+}
+
+#historyNavBar ul li a.active {
+    background-color: #ffffff;
+    color: black;
+}
+
+#historyNavBar ul li a:hover:not(.active) {
+    background-color: #4C57D8;
+    color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+.contactBox {
+  float: left;
+  padding: 20px 40px 20px 160px;
+}
+
+#facebookBox {
+  text-align: center;
+}
+/* Bullettin board CSS */
+#news {
+	background-color: transparent;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+	
+}
+
+news.fade-out{
+	opacity:0;
+	transition:none;
+}
+button {
+	background-color: white ;
+	color: black;
+	border: 2px solid white;
+	padding: 5px 10px; 
+		
+}
+button:hover{
+	color: blue;
+	
+}
+#artistImage{
+	float:left;
+	margin: 0 0 10px 10px;
+	padding-right: 10px
+}
+a:link{
+	color: black;
+	background-color:transparent;
+	text-decoration:underline;
+}
+a:visited{
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+}
+a:hover{
+	color: red;
+	background-color:transparent;
+	text-decoration:underline;
+	
+}
+a:active{
+	color:#FF0004;
+	background-color:transparent;
+	text-decoration: underline
+}
+#poster{
+	float:right;
+	
+}
