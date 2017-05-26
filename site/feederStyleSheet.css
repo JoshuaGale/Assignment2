@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    background-color: #FFDA73;
+}
+
+#topBox {
+  clear: left;
+	height: 80px;
+	width: 100%;
+	padding: 25px;
+	padding-top: 10px;
+	margin: -12px;
+	background-color: brown;
+	color: white;
+  font-size: 1.2em;
+}
+
+#topBox img {
+    float: left;
+}
+
+#contentBox {
+	height: auto;
+	width: 1200px;
+	border: solid thick #081073;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 100px;
+  background-color: white;
+}
+
+#footer {
+  float: left;
+  width:100%;
+  background: brown;
+  padding: 10px;
+  padding-bottom: 30px;
+	margin: -12px;
+  color: white;
+}
+
+#footer ul {
+  list-style-type: none;
+  float: left;
+}
+
+#contactType ul {
+  font-weight: bold;
+}
+
+#footer h1{
+  font-size: 1.2em;
+}
+
+#navBar li {
+	float: left;
+}
+
+#navBar ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1924B1;
+}
+
+#navBar ul li a {
+	display: block;
+	color: white;
+  text-align: center;
+	padding: 24px 40px;
+	text-decoration: none;
+}
+
+
+
+#navBar ul li a.active {
+    background-color: #ffffff;
+    color: black;
+}
+
+#navBar ul li a:hover:not(.active) {
+    background-color: #4C57D8;
+    color: white;
+}
+#contentSection {
+    padding: 20px;
+}
+
+#promo h1 {
+  font-size: 1.4em;
+}
+
+.button {
+    background-color: #2ea6ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

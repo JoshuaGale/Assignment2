@@ -3,12 +3,14 @@
 <head>
     <link href="mainStyleSheet.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
+    <meta name="description" content="Fast becoming one of North Queensland’s cultural jewels, the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music through North Queensland.">
+    <meta name="keywords" content="Music, orchestra, townsville, BRO, concerts, Ensembles">
     <title>Barrier Reef Orchestra</title>
 </head>
 <body>
 <div id="page">
     <div id="header">
-        <img src="SiteImages/logo.png">
+        <img src="SiteImages/logo_alt.png">
     </div>
     <div id="navBar">
         <ul>
@@ -27,15 +29,26 @@
         <h1>Barrier Reef Orchestra</h1>
       </div>
         <div id="gallery">
-            <img src="gallery/instruments/Background_BRO_056.jpg">
+          <div class="contentContainer">
+            <img class="mySlides" src="gallery/home_gallery/Background_BRO_DSC0592.jpg">
+            <img class="mySlides" src="gallery/home_gallery/Background_BRO_107.jpg">
+            <img class="mySlides" src="gallery/home_gallery/Background_BRO_DSC0803.jpg">
+            <div class="centerGalery">
+              <div class="left" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="right" onclick="plusDivs(1)">&#10095;</div>
+              <span class="navBadge demo" onclick="currentDiv(1)"></span>
+              <span class="navBadge demo" onclick="currentDiv(2)"></span>
+              <span class="navBadge demo" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
         </div>
         <div class="menuBox">
           <p class="menuBoxTitle">The Barrier Reef Orchestra - A North Queensland Icon</p>
           <p class="bodyText">Fast becoming one of North Queensland’s cultural jewels the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music throughout North Queensland. A community orchestra consisting of the finest musicians drawn from as far afield as Cairns and Mackay which focuses on unique orchestral juxtapositions. </p>
         </div>
         <div class="menuBox">
-          <p class="menuBoxTitle">Join us and Become a member</p>
-          <p><a id="membershipButton" href="sign_up.html">Membership Form</a></p>
+          <p class="menuBoxTitle">Join us and Become a member</p><br>
+          <p><a id="membershipButton" href="sign_up.html">Sign Up!</a></p>
         </div>
         <div class="menuBox">
           <p class="menuBoxTitle">Come Join Us on facebook</p>
@@ -44,7 +57,6 @@
 
 
     </div>
-    <div class="blankBox"></div>
     <div id="footer">
         <h1>Contact Us</h1>
         <div id="contactType">
@@ -65,5 +77,6 @@
         </div>
     </div>
 </div>
+<script src="main_javascript.js"></script>
 </body>
 </html>
